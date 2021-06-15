@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity">
+
+    <Button
+        android:id="@+id/btnListado"
+        android:layout_width="255dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="40dp"
+        android:text="ListadoPremios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnComprar"
+        android:layout_width="255dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:text="Comprar"
+        app:layout_constraintEnd_toEndOf="@+id/txtNumero"
+        app:layout_constraintStart_toStartOf="@+id/txtNumero"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumero" />
+
+    <Button
+        android:id="@+id/btnComprarSMS"
+        android:layout_width="255dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:text="Comprarsms"
+        app:layout_constraintEnd_toEndOf="@+id/btnComprar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnComprar"
+        app:layout_constraintTop_toBottomOf="@+id/btnComprar" />
+
+    <Button
+        android:id="@+id/btnReclamacion"
+        android:layout_width="255dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:text="RECLAMACIÓN"
+        app:layout_constraintEnd_toEndOf="@+id/btnComprarSMS"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnComprarSMS"
+        app:layout_constraintTop_toBottomOf="@+id/btnComprarSMS" />
+
+    <Button
+        android:id="@+id/btnInfo"
+        android:layout_width="255dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:text="INFO"
+        app:layout_constraintEnd_toEndOf="@+id/btnReclamacion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnReclamacion"
+        app:layout_constraintTop_toBottomOf="@+id/btnReclamacion" />
+
+    <TextView
+        android:id="@+id/txtNumero"
+        android:layout_width="255dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="14782"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnListado"
+        app:layout_constraintStart_toStartOf="@+id/btnListado"
+        app:layout_constraintTop_toBottomOf="@+id/btnListado" />
+</androidx.constraintlayout.widget.ConstraintLayout>
