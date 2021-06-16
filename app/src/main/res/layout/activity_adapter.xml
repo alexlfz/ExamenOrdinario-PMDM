@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Adapter">
+
+    <TextView
+        android:id="@+id/idNumero"
+        android:layout_width="137dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idSerie"
+        android:layout_width="137dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/idNumero"
+        app:layout_constraintStart_toEndOf="@+id/idNumero"
+        app:layout_constraintTop_toTopOf="@+id/idNumero"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/idPremio"
+        android:layout_width="71dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/idSerie"
+        app:layout_constraintStart_toEndOf="@+id/idSerie"
+        app:layout_constraintTop_toTopOf="@+id/idSerie"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
